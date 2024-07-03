@@ -1,6 +1,6 @@
 using System;
 
-namespace HomeApi
+namespace HomeApi.Models
 {
     public class WeatherForecast
     {
