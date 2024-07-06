@@ -32,10 +32,19 @@ namespace HomeApi.Controllers
             return StatusCode(200, "Устройства отсутствуют");
         }
 
-        /// <summary>
-        /// Добавление нового устройства
-        /// </summary>
-        [HttpPost]
+    /// <summary>
+    /// Добавление нового устройства
+    /// {
+    ///"name": "Чайник",
+    ///"manufacturer": "Bosch",
+    ///"model": "G-022",
+    ///"serialNumber": "g215215-Asf",
+    ///"currentVolts": 220,
+    ///"gasUsage": false,
+    ///"location": "Kitchen"
+    ///}
+    /// </summary>
+    [HttpPost]
         [Route("Add")]
         public IActionResult Add(
           [FromBody] // Атрибут, указывающий, откуда брать значение объекта
