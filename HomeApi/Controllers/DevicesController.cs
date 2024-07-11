@@ -34,15 +34,15 @@ namespace HomeApi.Controllers
 
     /// <summary>
     /// Добавление нового устройства
-    /// {
-    ///"name": "Чайник",
-    ///"manufacturer": "Bosch",
-    ///"model": "G-022",
-    ///"serialNumber": "g215215-Asf",
-    ///"currentVolts": 220,
-    ///"gasUsage": false,
-    ///"location": "Kitchen"
-    ///}
+    /* {
+    "name": "Чайник",
+    "manufacturer": "Bosch",
+    "model": "G-022",
+    "serialNumber": "g215215-Asf",
+    "currentVolts": 220,
+    "gasUsage": false,
+    "location": "Kitchen"
+    }*/
     /// </summary>
     [HttpPost]
         [Route("Add")]
@@ -51,6 +51,10 @@ namespace HomeApi.Controllers
           AddDeviceRequest request // Объект запроса
         )
         {
+            if (request.CurrentVolts < 120)
+            {
+                return StatusCode(403, $"Устройства с напряжением меньше 120 вольт не поддерживаются!");
+            }
             return StatusCode(200, $"Устройство {request.Name} добавлено!");
         }
     }
