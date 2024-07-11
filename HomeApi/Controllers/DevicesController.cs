@@ -51,10 +51,10 @@ namespace HomeApi.Controllers
           AddDeviceRequest request // Объект запроса
         )
         {
-            if (request.CurrentVolts < 120)
-            {
-                return StatusCode(403, $"Устройства с напряжением меньше 120 вольт не поддерживаются!");
-            }
+            //if (request.CurrentVolts < 120)
+            //{
+            //    return StatusCode(403, $"Устройства с напряжением меньше 120 вольт не поддерживаются!");
+            //}
             return StatusCode(200, $"Устройство {request.Name} добавлено!");
         }
     }
