@@ -5,7 +5,7 @@ using Microsoft.Extensions.Options;
 using System.Text;
 using System;
 using AutoMapper;
-using HomeApi.Contracts;
+using HomeApi.Contracts.Models.Home;
 
 namespace HomeApi.Controllers
 {

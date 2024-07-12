@@ -1,4 +1,4 @@
-﻿namespace HomeApi.Contracts
+﻿namespace HomeApi.Contracts.Models.Home
 {
     /// <summary>
     /// Информация о вашем доме (модель ответа)
@@ -21,4 +21,5 @@
         public int Building { get; set; }
         public string Street { get; set; }
     }
+
 }
