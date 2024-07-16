@@ -34,7 +34,8 @@ namespace HomeApi.Controllers
 
     /// <summary>
     /// Добавление нового устройства
-    /* {
+    /* 
+    {
     "name": "Чайник",
     "manufacturer": "Bosch",
     "model": "G-022",
@@ -42,7 +43,8 @@ namespace HomeApi.Controllers
     "currentVolts": 220,
     "gasUsage": false,
     "location": "Kitchen"
-    }*/
+    }
+    */
     /// </summary>
     [HttpPost]
         [Route("Add")]
@@ -51,12 +53,6 @@ namespace HomeApi.Controllers
           AddDeviceRequest request // Объект запроса
         )
         {
-            if (request.CurrentVolts < 120)
-            {
-                // Добавляем для клиента информативную ошибку
-                ModelState.AddModelError("currentVolts", "Устройства с напряжением меньше 120 вольт не поддерживаются!");
-                return BadRequest(ModelState);
-            }
 
             return StatusCode(200, $"Устройство {request.Name} добавлено!");
         }
