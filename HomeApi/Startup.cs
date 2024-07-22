@@ -14,6 +14,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using HomeApi.Data;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace HomeApi
 {
@@ -34,9 +37,14 @@ namespace HomeApi
             var assembly = Assembly.GetAssembly(typeof(MappingProfile));
             services.AddAutoMapper(assembly);
 
+            string connection = Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<HomeApiContext>(options => options.UseSqlServer(connection), ServiceLifetime.Singleton);
+
+
             // Подключаем валидацию
             services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<AddDeviceRequestValidator>());
             
+
             // Добавляем новый сервис
             services.Configure<HomeOptions>(Configuration);
 
