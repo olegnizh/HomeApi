@@ -5,7 +5,9 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeApi", "HomeApi\HomeApi.csproj", "{CAAD17FC-B500-4BA3-93DD-51B43773EF2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeApi.Contracts", "HomeApi.Contracts\HomeApi.Contracts.csproj", "{444DFC6E-6991-4EC4-9334-387D0BF1B20E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeApi.Contracts", "HomeApi.Contracts\HomeApi.Contracts.csproj", "{444DFC6E-6991-4EC4-9334-387D0BF1B20E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeApi.Data", "HomeApi.Data\HomeApi.Data.csproj", "{0E9C619A-2BB1-42A3-93C1-5987C6776724}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{444DFC6E-6991-4EC4-9334-387D0BF1B20E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{444DFC6E-6991-4EC4-9334-387D0BF1B20E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{444DFC6E-6991-4EC4-9334-387D0BF1B20E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E9C619A-2BB1-42A3-93C1-5987C6776724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E9C619A-2BB1-42A3-93C1-5987C6776724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E9C619A-2BB1-42A3-93C1-5987C6776724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E9C619A-2BB1-42A3-93C1-5987C6776724}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

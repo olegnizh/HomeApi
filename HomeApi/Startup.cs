@@ -23,8 +23,7 @@ namespace HomeApi
         /// <summary>
         /// Загрузка конфигурации из файла Json
         /// </summary>
-        private IConfiguration Configuration
-        { get; } = new ConfigurationBuilder()
+        private IConfiguration Configuration { get; } = new ConfigurationBuilder()
           .AddJsonFile("HomeOptions.json")
           .Build();
 
