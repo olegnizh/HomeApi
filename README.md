@@ -3,5 +3,5 @@
  - SWAGGER
  -
  ---
- ![](https://github.com/olegnizh/HomeApi/swagger_1.jpg)
+ ![](https://github.com/olegnizh/HomeApi/blob/swagger_1.jpg)
  
