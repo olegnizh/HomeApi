@@ -3,6 +3,6 @@
  - SWAGGER
  -
  ---
- ![ALT TEXT](../IMAGE_PATH//swagger_1.jpg)
+ ![ALT TEXT](swagger_1.jpg)
  
  
