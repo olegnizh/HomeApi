@@ -3,6 +3,6 @@
  - SWAGGER
  -
  ---
- ![ALT TEXT](swagger_1.jpg)
+ ![SWAGGER INFO](swagger_1.jpg)
  
  
