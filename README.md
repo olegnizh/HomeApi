@@ -1,7 +1,8 @@
 # HomeApi
  - Devices in Rooms
- - WEB API APPLICATION
- - SWAGGER
+ - WEB-API Application
+ - Swagger
+ - Minimal full project
  ---
  ![SWAGGER INFO](swagger_1.jpg)
   ---
